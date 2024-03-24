@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body > div {
+        background: #aaa;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      body > div > div {
+        flex-grow: 1;
+        width: 33%;
+        height: 100px;
+      }
+
+      body > div > div:nth-child(even) {
+        background: #23a;
+      }
+
+      body > div > div:nth-child(odd) {
+        background: #49b;
+      }
+
+     @media screen and (max-width: 500px){
+        body > div > div {
+        width: 60%;
+      }
+     }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+#if has won 
+store the index inside a wonList
+
+for backslash diagonals [-1,0,0]
+for slash diagonals [-2,0,0]

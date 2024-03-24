@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .box {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .box > * {
+        flex: 0 0  auto;
+        background: #f2f2f2;
+        border: 1px solid black;
+      }
+      .hide {
+        visibility: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+        <div>One</div>
+        <div>Add more text to this box to make it grow</div>
+        <div class="hide">Three
+          <br>has
+          <br>extra
+          <br>text
+        </div>
+        <div>Four</div>
+        <div>Five</div>
+        <div>Six</div>
+        <div>Seven</div>
+        <div>Eight</div>
+        <div>Nine</div>
+        <div>Ten</div>
+      </div>
+  </body>
+</html>

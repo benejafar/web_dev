@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Price Range Selector</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <div class="main">
+        <h1 class="owner">Geeks for Geeks</h1>
+        <h2 class="title">Price Range Selector</h2>
+        <div class="typeInputs">
+            <div class="typeInput">
+                <span class="min-label">Minimum Price</span>
+                <input type="number" class="min-input" value="2500">
+            </div>
+            <div class="typeInput">
+                <span class="max-label">Maximum Price</span>
+                <input type="number" class="max-input" value="8500">
+            </div>
+        </div>
+        <div class="range-container">
+            <span class="range-space"></span>
+        </div>
+
+      
+        <div class="rangeSelectors">
+                <input type="range" class="sliderSelect" min="0" max="10000" value="2500">
+         
+                <input type="range" class="sliderSelect" min="0" max="10000" value="8500">
+          
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+body {
+    background-color: rgb(87, 185, 237);
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-size: normal;
+}
+
+.heading {
+    font-family: "Nanum Brush Script" , cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 75px;
+    margin: 20px;
+    color: white;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: 75px 75px 75px;
+    grid-template-rows: 75px 75px 75px;
+    gap: 5px;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.exex, .circle {
+    position: absolute;
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.circle {
+    display: none;
+}
+
+[class^="square"] {
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    height: 72px;
+}
+
+
+.board {
+    margin-bottom: 20px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.crossMark {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    content: "x";
+    font-size: 60px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(87, 185, 237);
+}
+
+.roundMark {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    content: "x";
+    font-size: 60px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(87, 185, 237);
+}
+
+.start {
+    padding: 7px 14px;
+    border: none;
+    border-radius: 999px;
+    background-color: lightgreen;
+    color: rgb(83, 80, 80);
+    cursor: pointer;
+
+}
+
+.details {
+    display: table;
+    margin-bottom: 30px;
+    border-spacing: 10px;
+}
+
+.person {
+    display: table-row;
+}
+
+.person > * {
+    display: table-cell;
+}
+
+#personOne, #personTwo {
+    background-color: antiquewhite;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#personOne:focus, #personTwo:focus {
+    outline: none;
+}
